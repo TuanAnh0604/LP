@@ -8,7 +8,6 @@
 
 <script setup>
 import Navbar from './components/Navbar.vue'
-import CallAction from './components/CallAction.vue'
 import MainLy from './components/MainLy.vue'
 </script>
 
