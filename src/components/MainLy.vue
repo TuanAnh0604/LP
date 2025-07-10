@@ -134,6 +134,12 @@
       <h4>THEO DÕI CHÚNG TÔI</h4>
       <div class="social-icons">
         <!-- icons ở đây -->
+        <div class="social-icons">
+      <i class="fab fa-facebook" src="https://www.facebook.com/fptbtec"></i>
+      <i class="fab fa-instagram" src="https://www.instagram.com/btec.fpt/"></i>
+      <i class="fab fa-tiktok" src="https://www.tiktok.com/@fpt_btec"></i>
+      <i class="fab fa-youtube" src="https://www.youtube.com/@CAOANGQUOCTEBTECFPT"></i>
+    </div>
       </div>
     </div>
     <div class="footer-subscribe">

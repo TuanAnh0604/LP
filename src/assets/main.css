@@ -304,7 +304,8 @@ html, body {
 
 .social-icons {
   display: flex;
-  gap: 0.75rem;
-  font-size: 1.2rem;
+  gap: 1.5rem;
+  font-size: 1.4rem;
   margin-top: 1rem;
+  width: 100%; /* hoặc 250px tùy ý */
 }
