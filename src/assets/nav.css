@@ -1,57 +1,57 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.95);
-  position: fixed;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  font-family: 'Inter', sans-serif;
+  position: sticky;
   top: 0;
-  width: 100%;
-  z-index: 10;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  z-index: 1000;
+  line-height: 1; /* FIX khoảng trắng thừa */
 }
+
 
 .navbar-container {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.5rem 1rem;   /* Giảm padding top-bottom để tránh bị dãn */
   display: flex;
+  align-items: center;    /* Giữ các phần tử giữa dòng */
   justify-content: space-between;
-  align-items: center;
 }
 
-.logo-text-only {
-  font-size: 1.6rem;
-  font-weight: bold;
-  font-family: 'Georgia', serif;
-  color: #b71c1c;
-  margin-left: 0; /* đảm bảo không lệch phải */
+.logo img {
+  height: 56px;           /* Tăng từ 42px lên 56px */
+  object-fit: contain;    /* Giữ tỉ lệ ảnh */
+  display: block;         /* Tránh khoảng trắng do inline */
 }
 
 
-.nav-links-text {
-  display: none;
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
 }
 
-@media (min-width: 768px) {
-  .nav-links-text {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    font-family: 'Georgia', serif;
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
+.nav-links a {
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.25rem;
+}
 
-  .nav-links-text a {
-    color: #1a1a1a;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
+.nav-links a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: orange;
+}
 
-  .nav-links-text a:hover {
-    color: #1976d2;
-  }
+.search-icon {
+  font-size: 1.25rem;
+  cursor: pointer;
 }
