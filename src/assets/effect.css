@@ -1,0 +1,102 @@
+.btec-banner-bottom {
+  width: 120vw; /* Rộng hơn 100% để có không gian nghiêng chéo */
+  overflow: hidden;
+  padding: 15px 0;
+  position: relative;
+  left: -20vw; /* Căn giữa lại */
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(6px);
+  transform: rotate(-4deg);
+  z-index: 1;
+  background: linear-gradient(90deg, #f0f4ff, #e0f2fe, #f0f4ff);
+}
+
+.scroll-wrapper {
+  transform: skewY(2deg); /* đảo lại nghiêng chữ */
+}
+
+.scroll-text {
+  display: flex;
+  animation: scroll-infinite 20s linear infinite;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 1.25rem;
+  gap: 2rem;
+  flex-shrink: 0;
+  transform: rotate(4deg); /* chống lại rotate của banner */
+}   
+
+
+.scroll-text span,
+.scroll-text-reverse span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.scroll-text .icon,
+.scroll-text .text {
+  color: #66CCFF;
+  opacity: 0.8;
+}
+
+.scroll-text-reverse .icon,
+.scroll-text-reverse .text {
+  color: #60a5fa;
+  opacity: 0.8;
+}
+
+.icon-img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.7;
+  object-fit: contain;
+}
+
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.btec-banner-top {
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 0;
+  transform: rotate(4deg);
+  position: relative;
+   z-index: 2;
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(6px);
+  background: linear-gradient(90deg, #e0f2fe, #f0f4ff, #e0f2fe);
+}
+
+.scroll-text-reverse {
+  display: flex;
+  animation: scroll-infinite-reverse 20s linear infinite;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 1.25rem;
+  gap: 2rem;
+  flex-shrink: 0;
+  transform: rotate(-4deg); /* chống lại rotate của banner */
+}
+
+.scroll-text-reverse span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #60a5fa;
+  opacity: 0.8;
+}
+
+@keyframes scroll-infinite-reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

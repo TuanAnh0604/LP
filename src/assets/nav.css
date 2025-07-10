@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text-only {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  color: #b71c1c;
+  margin-left: 0; /* đảm bảo không lệch phải */
+}
+
+
+.nav-links-text {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-links-text {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .nav-links-text a {
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links-text a:hover {
+    color: #1976d2;
+  }
+}
