@@ -13,22 +13,16 @@
     <div class="main-container">
       <HeroCarousel />
 
-      <!-- Giới thiệu -->
-      <section class="section">
-        <h2 class="section-title">Sứ mệnh & Giá trị</h2>
-        <p class="section-paragraph">
-          Nắng soi trang vở hôm nào, chữ yêu tri thức chắt chao bao ngày. Tại BTEC, chúng tôi nuôi dưỡng
-          tâm hồn trong trẻo, gửi trao đam mê và dựng xây tương lai.
-        </p>
-      </section>
+
+      <MissionView />
 
       <!-- Về trường -->
       <section class="section section-gray">
         <div class="container">
-          <h2 class="section-title">Về BTEC</h2>
+          <h2 class="section-title">Về Cao đẳng Anh Quốc BTEC</h2>
           <p class="section-paragraph">
-            BTEC – ngọn gió miệt mài, cao đẳng quốc tế với tinh thần hội nhập. Khơi lên bản lĩnh, nối liền
-            thời gian và truyền thống giáo dục Việt.
+            Cao đẳng Anh Quốc FPT BTEC là chương trình đào tạo quốc tế thuộc Tổ chức Giáo dục FPT, hợp tác cùng Tổ chức Giáo dục và Khảo thí Pearson – Anh Quốc. Tại đây, sinh viên được học theo chuẩn quốc tế, giảng dạy hoàn toàn bằng tiếng Anh hoặc song ngữ, chú trọng phát triển toàn diện kiến thức, kỹ năng nghề nghiệp và tư duy sáng tạo, sẵn sàng hội nhập thị trường lao động toàn cầu.
+              <StatsCounter />
           </p>
         </div>
       </section>
@@ -62,21 +56,7 @@
           <p class="alumni-name">– Nguyễn Văn A, Dev tại FPT Software</p>
         </div>
       </section>
-
-
-      <!-- Liên hệ -->
-      <section class="section contact-section">
-        <div class="contact-form">
-          <h2 class="section-title">Liên hệ & Đăng ký</h2>
-          <p class="section-paragraph">Hãy để lại thông tin để được tư vấn chi tiết về các chương trình đào tạo.</p>
-          <form @submit.prevent="submitForm" class="form-grid">
-            <input v-model="name" type="text" placeholder="Họ tên" class="input" />
-            <input v-model="email" type="email" placeholder="Email" class="input" />
-            <button type="submit" class="button">Gửi ngay</button>
-          </form>
-          <p v-if="submitted" class="form-success">✔️ Cảm ơn bạn đã đăng ký!</p>
-        </div>
-      </section>
+  
 <div class="btec-banner-top">
   <div class="scroll-text-reverse">
     <span v-for="n in 20" :key="'rev-' + n">
@@ -122,24 +102,46 @@
   <div class="footer-bottom">
     <div class="footer-logo-block">
       <img src="/images/btv2.png" alt="BTEC logo" class="footer-logo">
-      <p>Với chúng tôi, không có giới hạn cho sự sáng tạo và phát triển. Hãy để chúng tôi giúp bạn tỏa sáng trong môi trường kỹ thuật số!</p>
+      <p>Đào tạo theo chuẩn quốc tế, chú trọng ngoại ngữ, kỹ năng nghề nghiệp và ứng dụng công nghệ hiện đại như AI vào giảng dạy.</p>
     </div>
     <div class="footer-contact">
       <h4>LIÊN HỆ</h4>
-      <p><strong>Hotline 24/7:</strong><br>0329 605 828</p>
-      <p><strong>Email:</strong><br>btecfpt@fpt.edu.vn</p>
-      <p><strong>Website:</strong><br>https://btec.fpt.edu.vn/</p>
+     <div class="contact-links">
+  <p>
+    <strong>Hotline 24/7:</strong><br>
+    <a href="tel:0329605828">0329 605 828</a>
+  </p>
+  <p>
+    <strong>Email:</strong><br>
+    <a href="mailto:btecfpt@fpt.edu.vn">btecfpt@fpt.edu.vn</a>
+  </p>
+  <p>
+    <strong>Website:</strong><br>
+    <a href="https://btec.fpt.edu.vn/" target="_blank" rel="noopener">https://btec.fpt.edu.vn/</a>
+  </p>
+</div>
+
+
     </div>
     <div class="footer-social">
       <h4>THEO DÕI CHÚNG TÔI</h4>
       <div class="social-icons">
         <!-- icons ở đây -->
         <div class="social-icons">
-      <i class="fab fa-facebook" src="https://www.facebook.com/fptbtec"></i>
-      <i class="fab fa-instagram" src="https://www.instagram.com/btec.fpt/"></i>
-      <i class="fab fa-tiktok" src="https://www.tiktok.com/@fpt_btec"></i>
-      <i class="fab fa-youtube" src="https://www.youtube.com/@CAOANGQUOCTEBTECFPT"></i>
-    </div>
+  <a href="https://www.facebook.com/fptbtec" target="_blank" rel="noopener">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="https://www.instagram.com/btec.fpt/" target="_blank" rel="noopener">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.tiktok.com/@fpt_btec" target="_blank" rel="noopener">
+    <i class="fab fa-tiktok"></i>
+  </a>
+  <a href="https://www.youtube.com/@CAOANGQUOCTEBTECFPT" target="_blank" rel="noopener">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+
       </div>
     </div>
     <div class="footer-subscribe">
@@ -165,8 +167,10 @@ import HeroCarousel from './HeroCarousel.vue'
 import '../assets/main.css'
 import '../assets/major.css'
 import '../assets/effect.css'
+import MissionView from './MissionView.vue'
+import StatsCounter from './StatsCounter.vue'
 const cards = [
-  {
+  { 
     image: '/images/it.jpg',
     title: 'Công nghệ thông tin',
     description: 'Lập trình Web, Mobile, Game, AI...'

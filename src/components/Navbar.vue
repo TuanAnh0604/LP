@@ -2,22 +2,27 @@
   <header class="navbar">
     <div class="navbar-container">
       <div class="logo">
-        <img src="/images/logorm.png" alt="BTEC FPT" />
+        <img src="/images/bt.png" alt="BTEC FPT" />
       </div>
       <nav class="nav-links">
         <ul>
-          <li><a href="#">Trang chủ</a></li>
-          <li><a href="#">Giới thiệu</a></li>
-          <li><a href="#">Chương Trình</a></li>
-          <li><a href="#">Khóa sĩ Tử</a></li>
-          <li><a href="#">Liên hệ</a></li>
+          <li v-for="(item, index) in navItems" :key="index">
+            <a href="#"
+               :class="{ active: activeIndex === index }"
+               @click.prevent="activeIndex = index">
+              {{ item }}
+            </a>
+          </li>
         </ul>
       </nav>
-      </div>
+    </div>
   </header>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import '../assets/nav.css'
-</script>
 
+const navItems = ['Trang chủ', 'Giới thiệu', 'Chương Trình', 'Khóa Sĩ Tử', 'Liên hệ']
+const activeIndex = ref(0) // Mặc định là 'Trang chủ'
+</script>

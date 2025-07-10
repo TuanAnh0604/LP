@@ -24,17 +24,17 @@ const slides = [
   {
     title: 'BTEC – Nơi bắt đầu hành trình tri thức',
     subtitle: 'Mùa hè thức giấc ban mai, sĩ tử khoác mộng xanh tươi...',
-    image: 'images/brand-05.png'
+    image: 'https://btec.fpt.edu.vn/wp-content/uploads/2022/03/Untitled-design-2.png'
   },
   {
     title: 'Kiến tạo tương lai với đam mê',
     subtitle: 'Chữ yêu tri thức chắt chao bao ngày, gửi trao đam mê dựng xây tương lai.',
-    image: 'images/brand-01.png'
+    image: 'https://channel.mediacdn.vn/428462621602512896/2022/10/3/photo-5-1664783078981949571938.jpg'
   },
   { 
     title: 'Vươn xa cùng BTEC quốc tế',
     subtitle: 'Không ngừng sáng tạo, mở mang, mỗi dòng code viết, mỗi trang nghĩa tình.',
-    image: 'images/brand-03.png'
+    image: 'https://channel.mediacdn.vn/428462621602512896/2022/10/3/photo-2-1664783078318673057764.jpg'
   }
 ]
 
