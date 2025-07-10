@@ -121,7 +121,7 @@
 
   <div class="footer-bottom">
     <div class="footer-logo-block">
-      <img src="/images/bt.png" alt="BTEC logo" class="footer-logo">
+      <img src="/images/btv2.png" alt="BTEC logo" class="footer-logo">
       <p>Với chúng tôi, không có giới hạn cho sự sáng tạo và phát triển. Hãy để chúng tôi giúp bạn tỏa sáng trong môi trường kỹ thuật số!</p>
     </div>
     <div class="footer-contact">
