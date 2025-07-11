@@ -326,3 +326,26 @@ html, body {
   margin-top: 1rem;
   width: 100%; /* hoặc 250px tùy ý */
 }
+.page-container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@media (max-width: 1024px) {
+  .page-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.main-container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+

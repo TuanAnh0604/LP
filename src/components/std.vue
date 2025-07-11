@@ -7,10 +7,9 @@
         Vượt qua kỳ thi quan trọng, bạn không chỉ là một sĩ tử, mà đã sẵn sàng bước vào hành trình mới. BTEC mang đến lựa chọn học tập quốc tế, định hướng nghề nghiệp rõ ràng và cơ hội phát triển toàn diện cho thế hệ trẻ Việt Nam.
       </p>
       <p class="sisu-highlight">Đừng để lựa chọn bị giới hạn bởi một kỳ thi — hãy mở ra cánh cửa mới cùng BTEC.</p>
-      <button class="sisu-btn">Khám phá hành trình tại BTEC</button>
     </div>
     <div class="sisu-image">
-      <img src="/images/logorm.png" alt="Hình ảnh sĩ tử" />
+      <img src="/images/std.png" alt="Hình ảnh sĩ tử" />
     </div>
   </div>
 </section>
@@ -64,20 +63,7 @@ export default {
   margin-bottom: 24px;
 }
 
-.sisu-btn {
-  background-color: #f97316;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
-.sisu-btn:hover {
-  background-color: #ea580c;
-}
 
 .sisu-image {
   flex: 1;
@@ -85,7 +71,5 @@ export default {
 
 .sisu-image img {
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 </style>
