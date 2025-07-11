@@ -1,5 +1,5 @@
 <template>
-  <div class="form-container">
+  <div id="contact" class="form-container">
     <div class="form-card">
       <div class="form-body">
         <div class="form-left">

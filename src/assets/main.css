@@ -217,20 +217,24 @@ html, body {
   padding: 0;
   height: 100%;
   box-sizing: border-box;
-  background: #ffffff;
+  background: url('/images/cl.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
+
+.section-gap {
+  margin-bottom: 4rem; /* hoặc nhiều hơn nếu bạn muốn tách xa */
+}
 
 .page-background {
   min-height: 100%;
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #f1f9ff 30%,
-    #e3f2fd 60%,
-    #e1f0fb 100%
-  );
+  background-image: url('/images/cl.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;     
+  background-position: center;
+  background-attachment: fixed; 
 }
+
 .training-header {
   text-align: center;
   margin-bottom: 2rem;
@@ -337,7 +341,12 @@ html, body {
     padding-right: 40px;
   }
 }
-
+#about {
+  scroll-margin-top: 100px;
+}
+#std {
+  scroll-margin-top: 100px;
+}
 @media (max-width: 640px) {
   .page-container {
     padding-left: 20px;

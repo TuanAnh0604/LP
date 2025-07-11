@@ -1,32 +1,35 @@
 <template>
   <div>
-    <div class="page-container">
+    <div id="home" class="page-container">
       <div class="page-background">
-        <!-- floating-cubes -->
-        <div class="floating-cubes"></div>
-
         <!-- Hiệu ứng hình lục giác toàn màn -->
         <div class="floating-cubes">
-          <div class="cube" v-for="n in 5" :key="n" :style="{ '--i': n * 0.2 }"></div>
+          <div
+            class="cube"
+            v-for="n in 5"
+            :key="n"
+            :style="{ '--i': n * 0.2 }"
+          ></div>
         </div>
+      </div>
 
+      <div class="main-container">
         <HeroCarousel />
+        <std />
+        <TraditionalSection />
 
         <!-- Về trường -->
-        <section class="section section-gray">
+        <section id="about" class="section section-gray">
           <div class="container">
             <h2 class="section-title">Về Cao đẳng quốc tế BTEC</h2>
             <p class="section-paragraph">
               Nếu bạn đang tìm một môi trường học tập chuẩn quốc tế, định hướng thực tiễn và cơ hội việc làm cao sau tốt nghiệp — BTEC chính là nơi dành cho bạn. Cao đẳng Anh Quốc FPT BTEC là chương trình đào tạo quốc tế thuộc Tổ chức Giáo dục FPT, hợp tác cùng Tổ chức Giáo dục và Khảo thí Pearson – Anh Quốc. Tại đây, sinh viên được học theo chuẩn quốc tế, giảng dạy hoàn toàn bằng tiếng Anh hoặc song ngữ, chú trọng phát triển toàn diện kiến thức, kỹ năng nghề nghiệp và tư duy sáng tạo, sẵn sàng hội nhập thị trường lao động toàn cầu.
-              <StatsCounter />
             </p>
+            <StatsCounter />
           </div>
         </section>
 
-        <std />
-        <TraditionalSection />
-
-        <!-- Chuyên ngành -->
+        <!-- Chuyên ngành đào tạo -->
         <section class="section">
           <div class="training-header">
             <div class="training-title">Chuyên ngành đào tạo</div>
@@ -34,7 +37,6 @@
               Chúng tôi cung cấp các chương trình đào tạo chuyên sâu, hiện đại và thực tiễn, giúp sinh viên phát triển toàn diện kỹ năng chuyên môn, tư duy sáng tạo và năng lực công nghệ để sẵn sàng thích ứng với thị trường lao động toàn cầu không ngừng đổi mới.
             </div>
           </div>
-
           <div class="majors-grid">
             <div v-for="card in cards" :key="card.title" class="major-card">
               <img :src="card.image" :alt="card.title" class="major-image" />
@@ -45,29 +47,19 @@
             </div>
           </div>
         </section>
-
-        <!-- Cựu sinh viên -->
-        <section class="section section-gray">
-          <div class="alumni">
-            <h2 class="section-title">Cựu sinh viên nói gì?</h2>
-            <blockquote class="alumni-quote">
-              “Trường xưa vọng lại lời ca... Trí tài kết tụ nơi đây, cho ngày thăng hoa.”
-            </blockquote>
-            <p class="alumni-name">– Nguyễn Văn A, Dev tại FPT Software</p>
-          </div>
-        </section>
-
         <MissionView />
-       
+        <EnrollmentForm />
       </div>
     </div>
- <EnrollmentForm />
+
     <!-- Banners ngoài page-container để full màn -->
     <div class="btec-banner-top">
       <div class="scroll-text-reverse">
         <span v-for="n in 20" :key="'rev-' + n">
           <img src="/images/v5.png" alt="star" class="icon-img" />
-          <span class="text">BTEC <img src="/images/v5.png" alt="star" class="icon-img" /> btec.fpt.edu.vn</span>
+          <span class="text">
+            BTEC <img src="/images/v5.png" alt="star" class="icon-img" /> btec.fpt.edu.vn
+          </span>
           <img src="/images/v5.png" alt="star" class="icon-img" />
         </span>
       </div>
@@ -83,7 +75,7 @@
       </div>
     </div>
 
-    <!-- Footer ngoài page-container để full màn -->
+     <!-- Footer ngoài page-container để full màn -->
     <div class="footer-container">
       <div class="footer-grid">
         <div class="footer-block">
@@ -143,17 +135,19 @@
   </div>
 </template>
 
+
 <script setup>
 import { ref } from 'vue'
 import HeroCarousel from './HeroCarousel.vue'
-import '../assets/main.css'
-import '../assets/major.css'
-import '../assets/effect.css'
 import std from './std.vue'
 import TraditionalSection from './TraditionalSection.vue'
 import MissionView from './MissionView.vue'
 import StatsCounter from './StatsCounter.vue'
 import EnrollmentForm from './EnrollmentForm.vue'
+
+import '../assets/main.css'
+import '../assets/major.css'
+import '../assets/effect.css'
 
 const cards = [
   {
@@ -177,17 +171,4 @@ const cards = [
     description: 'Content, Event, Branding...'
   }
 ]
-
-const name = ref('')
-const email = ref('')
-const submitted = ref(false)
-
-function submitForm() {
-  if (name.value && email.value) {
-    console.log('Thông tin:', name.value, email.value)
-    submitted.value = true
-    name.value = ''
-    email.value = ''
-  }
-}
 </script>

@@ -1,8 +1,8 @@
 <template>
-  <section class="section mission-section">
+
     <div class="mission-grid">
       <div class="mission-text">
-        <h2 class="section-title">Sứ mệnh</h2>
+        <h2 class="section-title">Sứ mệnh & Giá Trị</h2>
         <p class="section-paragraph">
           BTEC FPT mang trong mình sứ mệnh tạo nên một thế hệ sinh viên năng động, sáng tạo và hội nhập toàn cầu. 
           Chúng tôi cam kết cung cấp chương trình đào tạo chuẩn quốc tế, phát triển toàn diện kỹ năng cá nhân và chuyên môn.
@@ -16,7 +16,6 @@
         <img src="/images/ms.jpg" alt="BTEC Mission" />
       </div>
     </div>
-  </section>
 </template>
 
 <script setup>
@@ -24,9 +23,7 @@
 </script>
 
 <style scoped>
-.mission-section {
-  background-color: #ffffff;
-}
+
 
 .mission-grid {
   display: grid;

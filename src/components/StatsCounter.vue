@@ -11,8 +11,8 @@
 import { ref, onMounted } from 'vue'
 
 const stats = [
-  { label: 'Năm kinh nghiệm', value: 15, suffix: '+' },
-  { label: 'Sinh viên có việc làm', value: 95, suffix: '%' },
+  { label: 'Năm kinh nghiệm', value: 10, suffix: '+' },
+  { label: 'Sinh viên có việc làm', value: 98, suffix: '%' },
   { label: 'Sinh viên đã tốt nghiệp', value: 10000, suffix: '+' },
   { label: 'Đối tác doanh nghiệp', value: 100, suffix: '+' }
 ]
