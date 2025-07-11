@@ -244,29 +244,31 @@ import StatsCounter from "./StatsCounter.vue";
 import EnrollmentForm from "./EnrollmentForm.vue";
 const cards = [
   {
-    image: "/images/it.jpg",
-    title: "Công nghệ thông tin",
-    description: "Lập trình Web, Mobile, Game, AI...",
+
+    image: `${import.meta.env.BASE_URL}images/it.jpg`,
+    title: 'Công nghệ thông tin',
+    description: 'Lập trình Web, Mobile, Game, AI...'
   },
   {
-    image: "/images/mkt.jpg",
-    title: "Quản trị kinh doanh",
-    description: "Chiến lược, Marketing, Quản trị dự án...",
+    image: `${import.meta.env.BASE_URL}images/gd.jpg`,
+    title: 'Thiết kế đồ hoạ',
+    description: 'Mỹ thuật đa phương tiện, 2D, 3D...'
   },
   {
-    image: "/images/gd.jpg",
-    title: "Thiết kế đồ họa",
-    description: "Thiết kế 2D, 3D, UI/UX...",
+    image: `${import.meta.env.BASE_URL}images/bd.jpg`,
+    title: 'Kinh doanh',
+    description: 'Marketing, Quản trị, Sales...'
   },
   {
-    image: "/images/bd.jpg",
-    title: "Công nghệ bán dẫn",
-    description: "Vi xử lý, sản xuất chip, IC...",
-  },
-];
-const name = ref("");
-const email = ref("");
-const submitted = ref(false);
+    image: `${import.meta.env.BASE_URL}images/mkt.jpg`,
+    title: 'Truyền thông',
+    description: 'Content, Event, Branding...'
+  }
+]
+
+const name = ref('')
+const email = ref('')
+const submitted = ref(false)
 
 function submitForm() {
   if (name.value && email.value) {

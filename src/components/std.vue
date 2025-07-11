@@ -10,7 +10,7 @@
       <button class="sisu-btn">Khám phá hành trình tại BTEC</button>
     </div>
     <div class="sisu-image">
-      <img src="/images/bem.jpg" alt="Hình ảnh sĩ tử" />
+      <img src="/images/logorm.png" alt="Hình ảnh sĩ tử" />
     </div>
   </div>
 </section>

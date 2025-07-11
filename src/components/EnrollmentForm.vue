@@ -32,10 +32,7 @@
                 <option>Quản trị kinh doanh</option>
               </select>
             </div>
-            <div class="submit-container">
-  <button type="submit" class="submit-btn">Gửi đăng ký</button>
-</div>
-
+            <button class="submit-btn" type="submit">Gửi đăng ký</button>
           </form>
         </div>
         <div class="form-right">
