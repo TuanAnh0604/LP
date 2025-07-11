@@ -1,5 +1,5 @@
 <template>
-  <section id='std' class="sisu-section">
+
   <div class="sisu-container">
     <div class="sisu-text">
       <h2 class="sisu-title">Từ sĩ tử đến sinh viên quốc tế</h2>
@@ -12,7 +12,7 @@
       <img src="/images/std.png" alt="Hình ảnh sĩ tử" />
     </div>
   </div>
-</section>
+
 
 </template>
 

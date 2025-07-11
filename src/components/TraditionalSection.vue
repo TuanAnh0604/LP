@@ -30,7 +30,7 @@
 </template>
 <style scoped>
 .tradition-section {
-  background: #fef3c7; /* vàng nhạt như giấy dó */
+  background: #ffffff; /* vàng nhạt như giấy dó */
   padding: 80px 20px;
 }
 

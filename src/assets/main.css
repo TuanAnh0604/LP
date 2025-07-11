@@ -18,9 +18,11 @@
 .section-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
-  text-align: left;
+  color: #FF6600;
+  text-align: center;
+  margin-bottom: 0.1rem; /* Giảm xuống để đẩy gần StatsCounter hơn */
 }
+
 
 .section-paragraph {
   margin-bottom: 1rem;
@@ -125,6 +127,7 @@
   color: #718096;
   background-color: #f9fafb;
 }
+
 .btec-banner-bottom {
   width: 100%;
   overflow: hidden;
@@ -243,7 +246,7 @@ html, body {
 .training-title {
   font-size: 2.25rem;
   font-weight: bold;
-  color: #1a202c;
+  color: #1E3A8A;
   margin-bottom: 1rem;
 }
 
@@ -353,8 +356,15 @@ html, body {
     padding-right: 20px;
   }
 }
-.main-container {
-  padding-left: 100px;
-  padding-right: 100px;
+
+
+/* Căn giữa tiêu đề và đoạn văn cho phần "Về Cao đẳng quốc tế BTEC" */
+#about .section-title {
+  text-align: center;
 }
 
+#about .section-paragraph {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 1.5rem auto; /* căn giữa và cách dưới */
+}

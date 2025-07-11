@@ -13,24 +13,22 @@
         </div>
       </div>
 
-      <div class="main-container">
+
         <HeroCarousel />
         <std />
         <TraditionalSection />
 
         <!-- Về trường -->
-        <section id="about" class="section section-gray">
+
           <div class="container">
             <h2 class="section-title">Về Cao đẳng quốc tế BTEC</h2>
-            <p class="section-paragraph">
-              Nếu bạn đang tìm một môi trường học tập chuẩn quốc tế, định hướng thực tiễn và cơ hội việc làm cao sau tốt nghiệp — BTEC chính là nơi dành cho bạn. Cao đẳng Anh Quốc FPT BTEC là chương trình đào tạo quốc tế thuộc Tổ chức Giáo dục FPT, hợp tác cùng Tổ chức Giáo dục và Khảo thí Pearson – Anh Quốc. Tại đây, sinh viên được học theo chuẩn quốc tế, giảng dạy hoàn toàn bằng tiếng Anh hoặc song ngữ, chú trọng phát triển toàn diện kiến thức, kỹ năng nghề nghiệp và tư duy sáng tạo, sẵn sàng hội nhập thị trường lao động toàn cầu.
-            </p>
+            
             <StatsCounter />
           </div>
-        </section>
+
 
         <!-- Chuyên ngành đào tạo -->
-        <section class="section">
+       
           <div class="training-header">
             <div class="training-title">Chuyên ngành đào tạo</div>
             <div class="training-description">
@@ -46,10 +44,10 @@
               </div>
             </div>
           </div>
-        </section>
+        
         <MissionView />
         <EnrollmentForm />
-      </div>
+      
     </div>
 
     <!-- Banners ngoài page-container để full màn -->
@@ -161,13 +159,13 @@ const cards = [
     description: 'Mỹ thuật đa phương tiện, 2D, 3D...'
   },
   {
-    image: `${import.meta.env.BASE_URL}images/bd.jpg`,
-    title: 'Kinh doanh',
+    image: `${import.meta.env.BASE_URL}images/mkt.jpg`,
+    title: 'Quản Trị Kinh Doanh ',
     description: 'Marketing, Quản trị, Sales...'
   },
   {
-    image: `${import.meta.env.BASE_URL}images/mkt.jpg`,
-    title: 'Truyền thông',
+    image: `${import.meta.env.BASE_URL}images/bd.jpg`,
+    title: 'Công nghệ bán dẫn',
     description: 'Content, Event, Branding...'
   }
 ]
