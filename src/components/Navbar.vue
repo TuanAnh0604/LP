@@ -23,6 +23,6 @@
 import { ref } from 'vue'
 import '../assets/nav.css'
 
-const navItems = ['Trang chủ', 'Giới thiệu', 'Chương Trình', 'Khóa Sĩ Tử', 'Liên hệ']
-const activeIndex = ref(0) // Mặc định là 'Trang chủ'
+const navItems = ['Trang chủ', 'Giới thiệu', 'Cổ truyền', 'Sĩ Tử', 'Liên hệ']
+const activeIndex = ref(0) 
 </script>

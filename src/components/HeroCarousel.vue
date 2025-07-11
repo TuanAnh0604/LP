@@ -1,16 +1,10 @@
 <template>
-  <div>
+
     <div class="hero-slide" :style="{ backgroundImage: `url(${currentSlide.image})` }">
       <!-- Lớp nền mờ -->
       <div class="overlay"></div>
 
-      <!-- Nội dung -->
-      <div class="content">
-        <h1 class="title">{{ currentSlide.title }}</h1>
-        <p class="subtitle">{{ currentSlide.subtitle }}</p>
-        <a href="#contact" class="cta-button">Khám phá ngay</a>
-      </div>
-    </div>
+  
 
     
   </div>

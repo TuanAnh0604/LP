@@ -12,20 +12,18 @@
 
     <div class="main-container">
       <HeroCarousel />
-
-
-      <MissionView />
-
       <!-- Về trường -->
       <section class="section section-gray">
         <div class="container">
-          <h2 class="section-title">Về Cao đẳng Anh Quốc BTEC</h2>
+          <h2 class="section-title">Về Cao đẳng quốc tế BTEC</h2>
           <p class="section-paragraph">
-            Cao đẳng Anh Quốc FPT BTEC là chương trình đào tạo quốc tế thuộc Tổ chức Giáo dục FPT, hợp tác cùng Tổ chức Giáo dục và Khảo thí Pearson – Anh Quốc. Tại đây, sinh viên được học theo chuẩn quốc tế, giảng dạy hoàn toàn bằng tiếng Anh hoặc song ngữ, chú trọng phát triển toàn diện kiến thức, kỹ năng nghề nghiệp và tư duy sáng tạo, sẵn sàng hội nhập thị trường lao động toàn cầu.
+           Nếu bạn đang tìm một môi trường học tập chuẩn quốc tế, định hướng thực tiễn và cơ hội việc làm cao sau tốt nghiệp — BTEC chính là nơi dành cho bạn. Cao đẳng Anh Quốc FPT BTEC là chương trình đào tạo quốc tế thuộc Tổ chức Giáo dục FPT, hợp tác cùng Tổ chức Giáo dục và Khảo thí Pearson – Anh Quốc. Tại đây, sinh viên được học theo chuẩn quốc tế, giảng dạy hoàn toàn bằng tiếng Anh hoặc song ngữ, chú trọng phát triển toàn diện kiến thức, kỹ năng nghề nghiệp và tư duy sáng tạo, sẵn sàng hội nhập thị trường lao động toàn cầu.
               <StatsCounter />
           </p>
         </div>
       </section>
+      <std/> 
+      <TraditionalSection/>
   <section class="section">
     <div class="training-header">
   <div class="training-title">Chuyên ngành đào tạo</div>
@@ -56,7 +54,8 @@
           <p class="alumni-name">– Nguyễn Văn A, Dev tại FPT Software</p>
         </div>
       </section>
-  
+       <MissionView /> <!-- Sứ mệnh -->
+  <EnrollmentForm/>
 <div class="btec-banner-top">
   <div class="scroll-text-reverse">
     <span v-for="n in 20" :key="'rev-' + n">
@@ -167,8 +166,11 @@ import HeroCarousel from './HeroCarousel.vue'
 import '../assets/main.css'
 import '../assets/major.css'
 import '../assets/effect.css'
+import std from './std.vue'
+import TraditionalSection from './TraditionalSection.vue'
 import MissionView from './MissionView.vue'
 import StatsCounter from './StatsCounter.vue'
+import EnrollmentForm from './EnrollmentForm.vue'
 const cards = [
   { 
     image: '/images/it.jpg',
