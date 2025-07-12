@@ -170,7 +170,7 @@
 .cube {
   width: 40px;
   height: 40px;
-  background: rgba(173, 216, 230, 0.3);
+  background: rgba(198, 218, 245, 0.7);
   clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
   position: absolute;
   animation: floatCube 12s linear infinite;
@@ -197,6 +197,61 @@
     opacity: 0;
   }
 }
+.floating-bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.bubble {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(198, 218, 245, 0.7); /* màu trắng sáng rõ hơn */
+  box-shadow:
+    0 0 6px rgba(255, 255, 255, 0.8),
+    0 0 12px rgba(173, 216, 230, 0.5); /* ánh xanh mát */
+  animation: floatBubble 12s ease-in-out infinite;
+  top: 100%;
+  left: calc(10% + 80% * var(--i));
+  filter: blur(0.5px); /* tạo hiệu ứng hơi mờ, mềm mại */
+  opacity: 0;
+}
+
+.bubble:nth-child(odd) {
+  width: 25px;
+  height: 25px;
+}
+
+.bubble:nth-child(even) {
+  width: 15px;
+  height: 15px;
+}
+
+@keyframes floatBubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-50vh) scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1);
+    opacity: 0;
+  }
+}
+
 
 
 .contact-links a {

@@ -2,7 +2,7 @@
   <header class="navbar">
     <div class="navbar-container">
       <div class="logo">
-        <img src="/images/bt.png" alt="BTEC FPT" />
+        <img src="/images/btv2.png" alt="BTEC FPT" />
       </div>
       <nav class="nav-links">
         <ul>

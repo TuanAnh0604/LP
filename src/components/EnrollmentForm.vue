@@ -3,8 +3,8 @@
     <div class="form-card">
       <div class="form-body">
         <div class="form-left">
-          <h2 class="title">Nhập học liền tay</h2>
-          <p class="subtitle">Nhận ngay học bổng lên tới <strong>70% học phí</strong></p>
+          <h2 class="title">Cơ hội học chương trình Anh Quốc với học bổng tới 70%</h2>
+          <p class="subtitle">Liệu bạn có bỏ lỡ?<strong></strong></p>
           <form @submit.prevent="submitForm">
             <div class="form-group">
               <input v-model="form.name" type="text" placeholder="Họ và tên *" required />

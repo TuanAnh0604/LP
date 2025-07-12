@@ -1,14 +1,13 @@
 <template>
-
+  <section class ="ctn">
+  <div class="hero-wrapper">
     <div class="hero-slide" :style="{ backgroundImage: `url(${currentSlide.image})` }">
-      <!-- Lớp nền mờ -->
       <div class="overlay"></div>
-
-  
-
-    
+    </div>
   </div>
+</section>
 </template>
+
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
@@ -18,7 +17,7 @@ const slides = [
   {
     title: 'BTEC – Nơi bắt đầu hành trình tri thức',
     subtitle: 'Mùa hè thức giấc ban mai, sĩ tử khoác mộng xanh tươi...',
-    image: 'https://btec.fpt.edu.vn/wp-content/uploads/2022/03/Untitled-design-2.png'
+    image: 'https://channel.mediacdn.vn/428462621602512896/2022/10/3/photo-3-1664783078411117733867.jpg'
   },
   {
     title: 'Kiến tạo tương lai với đam mê',

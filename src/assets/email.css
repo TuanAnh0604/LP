@@ -24,12 +24,14 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  
 }
 
 .form-left,
 .form-right {
   flex: 1;
   padding: 48px; /* ✅ tăng padding để dãn ra */
+  
 }
 
 .form-left {
@@ -52,7 +54,16 @@
   color: #f97316;
   margin-bottom: 32px;
   text-align: left;
+  animation: pulseText 1.8s ease-in-out infinite;
+  transform-origin: left center; /* Giữ gốc phóng to bên trái */
 }
+
+@keyframes pulseText {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
 
 .form-group {
   margin-bottom: 24px;
@@ -124,3 +135,24 @@ select {
     text-align: center;
   }
 }
+input,
+select {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  height: 48px; /* ✅ Đặt chiều cao cố định */
+  box-sizing: border-box; /* ✅ Giúp padding không làm vỡ layout */
+  appearance: none; /* ✅ Gỡ kiểu mặc định trình duyệt */
+}
+
+select {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%225%22%20viewBox%3D%220%200%2010%205%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%200l5%205%205-5z%22%20fill%3D%22%23333%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 12px;
+  padding-right: 40px; /* Để không che icon */
+}
+

@@ -1,11 +1,11 @@
 .navbar {
-  background-color: white;
+  background: url('/images/cl.jpg');
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   font-family: 'Inter', sans-serif;
   position: sticky;
   top: 0;
   z-index: 1000;
-  line-height: 1; /* FIX khoảng trắng thừa */
+  line-height: 1; 
 }
 
 
@@ -16,12 +16,13 @@
   display: flex;
   align-items: center;    /* Giữ các phần tử giữa dòng */
   justify-content: space-between;
+  
 }
 
 .logo img {
-  height: 56px;           /* Tăng từ 42px lên 56px */
-  object-fit: contain;    /* Giữ tỉ lệ ảnh */
-  display: block;         /* Tránh khoảng trắng do inline */
+  height: 56px;           
+  object-fit: contain;    
+  display: block;         
 }
 
 

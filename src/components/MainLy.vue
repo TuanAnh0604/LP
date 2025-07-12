@@ -11,7 +11,20 @@
             :style="{ '--i': n * 0.2 }"
           ></div>
         </div>
+       <div class="floating-bubbles">
+  <div
+    class="bubble"
+    v-for="n in 8"
+    :key="n"
+    :style="{
+      '--i': n * 0.12,
+      animationDelay: `${n * 1.8}s`
+    }"
+  ></div>
+</div>
+
       </div>
+      
 
 
         <HeroCarousel />
@@ -20,7 +33,7 @@
 
         <!-- Về trường -->
 
-          <div class="container">
+          <div id="about" class="container">
             <h2 class="section-title">Về Cao đẳng quốc tế BTEC</h2>
             
             <StatsCounter />
@@ -166,7 +179,7 @@ const cards = [
   {
     image: `${import.meta.env.BASE_URL}images/bd.jpg`,
     title: 'Công nghệ bán dẫn',
-    description: 'Content, Event, Branding...'
+    description: 'Chip điện tử, linh kiện vi mạch, kỹ thuật bán dẫn...'
   }
 ]
 </script>

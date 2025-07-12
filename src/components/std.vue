@@ -1,6 +1,6 @@
 <template>
 
-  <div class="sisu-container">
+  <div id="std" class="sisu-container">
     <div class="sisu-text">
       <h2 class="sisu-title">Từ sĩ tử đến sinh viên quốc tế</h2>
       <p class="sisu-subtitle">
