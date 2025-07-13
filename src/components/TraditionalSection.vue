@@ -76,7 +76,7 @@
   text-align: center;
   padding: 0 10px;
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
-  white-space: nowrap; /* Không cho xuống dòng */
+  white-space: nowrap; 
 }
 
 
@@ -96,7 +96,7 @@
 }
 
 .tradition-desc {
-  font-size: 16px;
+  font-size: 17px;
   color: #374151;
   line-height: 1.8; /* Giãn dòng thoáng hơn */
   margin-bottom: 16px;
@@ -106,7 +106,7 @@
 .tradition-highlight {
   font-style: italic;
   color: #92400e;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.8;
   text-align: justify;
 }
@@ -120,4 +120,38 @@
   font-size: 20px;
   color: #b45309;
 }
+@media (max-width: 768px) {
+  .tradition-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 0 16px;
+  }
+
+  .tradition-text {
+    max-width: 100%;
+  }
+
+  .tradition-title {
+    font-size: 24px; /* To hơn một chút */
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .tradition-desc,
+  .tradition-highlight {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify; 
+  }
+
+  .tradition-caption {
+    font-size: 25px;
+    white-space: normal;
+    padding: 0 10px;
+    width: 100%;
+  }
+}
+
 </style>

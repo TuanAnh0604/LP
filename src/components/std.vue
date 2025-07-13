@@ -50,14 +50,14 @@ export default {
 }
 
 .sisu-subtitle {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.5;
   color: #2d3748;
   margin-bottom: 16px;
 }
 
 .sisu-highlight {
-  font-size: 16px;
+  font-size: 17px;
   font-style: italic;
   color: #d97706;
   margin-bottom: 24px;
